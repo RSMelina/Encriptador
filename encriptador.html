@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codificador</title> 
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <h1><img class="logo" src="Imagenes/Logo.png" alt="logo Alura"></h1>
+        </header>
+        <main class="main">
+            <section>
+                <textarea id="TextoACodificar" class="input-principal"
+                cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
+                <div>
+                    <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="btn">
+                    <button class="btnEncriptador" onclick="TextoIngresado()">Encriptar</button>
+                    <button class="btnDesencriptar" onclick="TextoIngresadoD()">Desencriptar</button>
+                </div> 
+            </section>
+            <section class="mensaje_cambiado">
+                <textarea id="mensaje_cambiado" readonly cols="20" rows="10" class="mensaje"></textarea>
+                <ul class="PreCodificado">
+                    <li>
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </li>
+                </ul>
+                <div>
+                    <button class="copiar"onclick="copiarTexto()">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <script src="encriptador.js" defer></script>
+        <!-- <script src="ejemplos.js" defer></script> -->
+    </body>
+</html>
